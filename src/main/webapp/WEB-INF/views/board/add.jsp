@@ -36,19 +36,15 @@
 			  <label for="contents" class="form-label">Contents</label>
 			  <textarea class="form-control" name="contents" id="contents" rows="3"></textarea>
 			</div>
-			<div class="mb-3">
-			  <label for="files" class="form-label">File</label>
-			  <input type="file" name="files" class="form-control" id="files">
-			</div>
-			<div class="mb-3">
-			  <label for="files" class="form-label">File</label>
-			  <input type="file" name="files" class="form-control" id="files">
-			</div>
-			<div class="mb-3">
-			  <label for="files" class="form-label">File</label>
-			  <input type="file" name="files" class="form-control" id="files">
-			</div>
 			
+			<!-- <div class="mb-3">
+			  <label for="files" class="form-label">File</label>
+			  <input type="file" name="files" class="form-control" id="files">
+			</div> -->
+			
+			<div class="mb-3" id="files">
+				<button class="del btn btn-danger" id="addFiles">파일추가</button>
+			</div>
 			
 			<div class="mb-3">
 				<button class="btn btn-success">WRITE</button>
@@ -63,5 +59,6 @@
 <script type="text/javascript">
 	$("#contents1").summernote();
 </script>
+<script src="/resources/images/js/board_files.js"></script>
 </body>
 </html>
