@@ -85,9 +85,11 @@ addFiles.addEventListener("click", function(){
 });
 
 addFiles.addEventListener("click", function(event){
-    if(event.target.classList[0]=='del'){
+    let button = event.target;
+    if(button.classList[0]=='del'){
         alert("DELETE");
-        let i = event.target.
-        document.remove("files"+i);
+        alert(button.title);
+        document.getElementById("file"+button.title).remove();
+        count--;
     }
 });
